@@ -108,7 +108,7 @@ export default function Testimonials() {
 
               <p
                 style={{
-                  fontFamily: "var(--font-cormorant), Georgia, serif",
+                  fontFamily: "var(--font-inter), sans-serif",
                   fontSize: "1.15rem",
                   fontWeight: 400,
                   fontStyle: "italic",

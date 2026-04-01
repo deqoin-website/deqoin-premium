@@ -160,7 +160,7 @@ export default function Showroom() {
           }}
         >
           <div>
-            <p
+            <h3
               style={{
                 fontFamily: "var(--font-cormorant), Georgia, serif",
                 fontSize: "1.75rem",
@@ -173,7 +173,7 @@ export default function Showroom() {
               <span style={{ fontStyle: "italic", color: "rgba(255,255,255,0.5)" }}>
                 ziyaret edin
               </span>
-            </p>
+            </h3>
             <p
               style={{
                 fontFamily: "var(--font-inter), sans-serif",

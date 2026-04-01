@@ -140,7 +140,7 @@ export default function Hero() {
 
           <p
             style={{
-              fontFamily: "var(--font-cormorant), Georgia, serif",
+              fontFamily: "var(--font-inter), sans-serif",
               fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)",
               fontWeight: 300,
               fontStyle: "italic",
@@ -249,7 +249,7 @@ export default function Hero() {
                 textAlign: "center",
                 padding: "2rem 0",
                 color: "rgba(255,255,255,0.7)",
-                fontFamily: "var(--font-cormorant), Georgia, serif",
+                fontFamily: "var(--font-inter), sans-serif",
                 fontSize: "1.25rem",
                 fontStyle: "italic",
               }}
