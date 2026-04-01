@@ -5,11 +5,11 @@ import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navLinks = [
-  { label: "Hakkımızda", href: "#about" },
-  { label: "Hizmetler", href: "#services" },
-  { label: "Projeler", href: "#portfolio" },
-  { label: "Showroom", href: "#showroom" },
-  { label: "İletişim", href: "#contact" },
+  { label: "Hakkımızda", href: "/about" },
+  { label: "Hizmetler", href: "/#services" },
+  { label: "Projeler", href: "/#portfolio" },
+  { label: "Showroom", href: "/#showroom" },
+  { label: "İletişim", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -105,7 +105,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#contact"
+              href="/#contact"
               style={{
                 background: "var(--burgundy)",
                 color: "#fff",
@@ -222,7 +222,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={handleNavClick}
             style={{
               background: "var(--burgundy)",
