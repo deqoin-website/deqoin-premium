@@ -64,13 +64,11 @@ export default function Hero() {
       />
 
       <div
-        className="container-deqoin"
+        className="container-deqoin grid grid-cols-1 lg:grid-cols-[1fr_480px]"
         style={{
           position: "relative",
           zIndex: 1,
           padding: "8rem 1.5rem 4rem",
-          display: "grid",
-          gridTemplateColumns: "1fr",
           gap: "4rem",
           alignItems: "center",
         }}
