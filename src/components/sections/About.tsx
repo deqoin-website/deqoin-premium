@@ -135,48 +135,7 @@ export default function About() {
               ))}
             </div>
 
-            <div
-              style={{
-                display: "flex",
-                gap: "2rem",
-                marginTop: "2.5rem",
-                paddingTop: "2.5rem",
-                borderTop: "1px solid var(--border-light)",
-                flexWrap: "wrap",
-              }}
-            >
-              {[
-                { num: "150+", label: "Tamamlanan Proje" },
-                { num: "3", label: "Hizmet Alanı" },
-                { num: "100%", label: "Anahtar Teslim" },
-              ].map((s) => (
-                <div key={s.label}>
-                  <div
-                    style={{
-                      fontFamily: "var(--font-cormorant), Georgia, serif",
-                      fontSize: "2.25rem",
-                      fontWeight: 300,
-                      color: "var(--charcoal)",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {s.num}
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: "var(--font-inter), sans-serif",
-                      fontSize: "0.65rem",
-                      letterSpacing: "0.15em",
-                      textTransform: "uppercase",
-                      color: "var(--text-muted)",
-                      marginTop: "0.25rem",
-                    }}
-                  >
-                    {s.label}
-                  </div>
-                </div>
-              ))}
-            </div>
+
           </div>
         </div>
       </div>
