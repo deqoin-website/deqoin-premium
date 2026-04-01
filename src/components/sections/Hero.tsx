@@ -162,49 +162,6 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Stats */}
-          <div
-            style={{
-              display: "flex",
-              gap: "3rem",
-              marginTop: "4rem",
-              paddingTop: "2.5rem",
-              borderTop: "1px solid rgba(255,255,255,0.1)",
-              flexWrap: "wrap",
-            }}
-          >
-            {[
-              { num: "150+", label: "Tamamlanan Proje" },
-              { num: "10+", label: "Yıllık Deneyim" },
-              { num: "3", label: "Hizmet Alanı" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div
-                  style={{
-                    fontFamily: "var(--font-cormorant), Georgia, serif",
-                    fontSize: "2.5rem",
-                    fontWeight: 300,
-                    color: "#fff",
-                    lineHeight: 1,
-                    marginBottom: "0.25rem",
-                  }}
-                >
-                  {s.num}
-                </div>
-                <div
-                  style={{
-                    fontFamily: "var(--font-inter), sans-serif",
-                    fontSize: "0.65rem",
-                    letterSpacing: "0.15em",
-                    textTransform: "uppercase",
-                    color: "rgba(255,255,255,0.35)",
-                  }}
-                >
-                  {s.label}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Appointment Form */}
