@@ -154,11 +154,11 @@ export default function Portfolio() {
               style={{
                 position: "relative",
                 overflow: "hidden",
-                height: project.size === "large" ? "480px" : "320px",
+                aspectRatio: project.size === "large" ? "2/1.2" : "1/1",
                 cursor: "pointer",
                 gridColumn: project.size === "large" ? "span 1" : "span 1",
               }}
-              className={project.size === "large" ? "md:col-span-2" : ""}
+              className={`group ${project.size === "large" ? "md:col-span-2" : ""}`}
             >
               <img
                 src={project.image}
@@ -167,15 +167,10 @@ export default function Portfolio() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  transition: "transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+                  transition: "transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1)",
                   display: "block",
                 }}
-                onMouseEnter={(e) =>
-                  ((e.target as HTMLImageElement).style.transform = "scale(1.06)")
-                }
-                onMouseLeave={(e) =>
-                  ((e.target as HTMLImageElement).style.transform = "scale(1)")
-                }
+                className="group-hover:scale-110"
               />
               {/* Hover Overlay */}
               <div
@@ -183,12 +178,16 @@ export default function Portfolio() {
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to top, rgba(26,26,26,0.9) 0%, transparent 60%)",
+                    "linear-gradient(to top, rgba(26,26,26,0.95) 0%, rgba(139,26,47,0.2) 50%, transparent 100%)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "flex-end",
                   padding: "2rem",
+                  opacity: 0,
+                  transition: "all 0.4s ease",
+                  zIndex: 10,
                 }}
+                className="group-hover:opacity-100"
               >
                 <p
                   style={{
@@ -198,7 +197,10 @@ export default function Portfolio() {
                     textTransform: "uppercase",
                     color: "var(--burgundy-light)",
                     marginBottom: "0.35rem",
+                    transform: "translateY(10px)",
+                    transition: "all 0.4s ease 0.1s",
                   }}
+                  className="group-hover:translate-y-0"
                 >
                   {project.category}
                 </p>
@@ -207,7 +209,10 @@ export default function Portfolio() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
+                    transform: "translateY(10px)",
+                    transition: "all 0.4s ease 0.2s",
                   }}
+                  className="group-hover:translate-y-0"
                 >
                   <h3
                     style={{
@@ -215,23 +220,25 @@ export default function Portfolio() {
                       fontSize: "1.5rem",
                       fontWeight: 400,
                       color: "#fff",
+                      lineHeight: 1.2,
                     }}
                   >
                     {project.title}
                   </h3>
                   <div
                     style={{
-                      width: "36px",
-                      height: "36px",
-                      border: "1px solid rgba(255,255,255,0.3)",
+                      width: "32px",
+                      height: "32px",
+                      borderRadius: "50%",
+                      border: "1px solid rgba(255,255,255,0.2)",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
                       color: "#fff",
-                      flexShrink: 0,
+                      transition: "all 0.3s ease",
                     }}
                   >
-                    <ArrowUpRight size={14} />
+                    <ArrowUpRight size={16} />
                   </div>
                 </div>
               </div>
