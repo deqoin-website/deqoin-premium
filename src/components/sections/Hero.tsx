@@ -101,29 +101,7 @@ export default function Hero() {
             Nevşehir · Kapadokya
           </p>
 
-          <h1
-            style={{
-              fontFamily: "var(--font-cormorant), Georgia, serif",
-              fontSize: "clamp(3rem, 8vw, 6.5rem)",
-              fontWeight: 300,
-              lineHeight: 1,
-              letterSpacing: "-0.02em",
-              color: "#fff",
-              marginBottom: "1rem",
-            }}
-          >
-            deqoin
-            <br />
-            <span
-              style={{
-                fontStyle: "italic",
-                color: "rgba(255,255,255,0.5)",
-                fontSize: "0.65em",
-              }}
-            >
-              design studio
-            </span>
-          </h1>
+
 
           <p
             style={{
