@@ -182,21 +182,7 @@ export default function Header() {
         >
           deqoin
         </div>
-        <button
-          onClick={() => setMenuOpen(false)}
-          style={{
-            position: "absolute",
-            top: "1.75rem",
-            right: "1.5rem",
-            background: "none",
-            border: "none",
-            color: "rgba(255,255,255,0.7)",
-            cursor: "pointer",
-          }}
-          aria-label="Menüyü kapat"
-        >
-          <X size={22} />
-        </button>
+
 
         <nav
           style={{
