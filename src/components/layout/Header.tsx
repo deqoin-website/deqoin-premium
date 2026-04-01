@@ -70,7 +70,6 @@ export default function Header() {
           {/* Desktop Nav */}
           <nav
             style={{
-              display: "flex",
               alignItems: "center",
               gap: "2.5rem",
             }}
@@ -135,14 +134,13 @@ export default function Header() {
           {/* Mobile Burger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden"
+            className="flex md:hidden"
             style={{
               background: "none",
               border: "none",
               color: "#fff",
               cursor: "pointer",
               padding: "0.25rem",
-              display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}
