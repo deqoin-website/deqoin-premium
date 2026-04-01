@@ -56,15 +56,19 @@ export default function Header() {
             href="/"
             style={{
               textDecoration: "none",
-              fontFamily: "var(--font-cormorant), Georgia, serif",
-              fontSize: "1.75rem",
-              fontWeight: 300,
-              letterSpacing: "0.05em",
-              color: "#fff",
-              lineHeight: 1,
+              display: "flex",
+              alignItems: "center",
             }}
           >
-            deqoin
+            <img 
+              src="/deqoin_logo.png" 
+              alt="deqoin design studio" 
+              style={{ 
+                height: scrolled ? "28px" : "36px", 
+                width: "auto",
+                transition: "height 0.4s ease"
+              }} 
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -173,14 +177,13 @@ export default function Header() {
             position: "absolute",
             top: "1.5rem",
             left: "1.5rem",
-            fontFamily: "var(--font-cormorant), Georgia, serif",
-            fontSize: "1.75rem",
-            fontWeight: 300,
-            letterSpacing: "0.05em",
-            color: "#fff",
           }}
         >
-          deqoin
+          <img 
+            src="/deqoin_logo.png" 
+            alt="deqoin" 
+            style={{ height: "32px", width: "auto" }} 
+          />
         </div>
 
 

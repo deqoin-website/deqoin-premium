@@ -35,16 +35,12 @@ export default function Footer() {
         >
           {/* Brand */}
           <div>
-            <div
-              style={{
-                fontFamily: "var(--font-cormorant), Georgia, serif",
-                fontSize: "2.25rem",
-                fontWeight: 300,
-                letterSpacing: "0.05em",
-                marginBottom: "1rem",
-              }}
-            >
-              deqoin
+            <div style={{ marginBottom: "1.5rem" }}>
+              <img 
+                src="/deqoin_logo.png" 
+                alt="deqoin design studio" 
+                style={{ height: "36px", width: "auto" }} 
+              />
             </div>
             <p
               style={{
