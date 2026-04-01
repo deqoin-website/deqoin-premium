@@ -52,11 +52,12 @@ export default function Footer() {
                 fontSize: "0.8rem",
                 lineHeight: 1.8,
                 color: "rgba(255,255,255,0.45)",
-                maxWidth: "260px",
+                maxWidth: "280px",
               }}
             >
-              Timeless spaces, crafted with precision. Nevşehir / Kapadokya
-              merkezli premium iç mimarlık ve tasarım stüdyosu.
+              Nevşehir / Kapadokya merkezli, tasarım ve anahtar teslim uygulamada 
+              kusursuzluğu hedefleyen çözüm ortağınız. Mekanlarınızın değerini 
+              vizyoner dokunuşlarla artırıyoruz.
             </p>
             {/* Socials */}
             <div
