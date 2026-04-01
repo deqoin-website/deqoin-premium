@@ -65,29 +65,31 @@ export default function Services() {
 
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: "2px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "2.5rem",
           }}
-          className="md:grid-cols-3"
         >
           {services.map((service, i) => (
             <div
               key={i}
               style={{
                 background: "#fff",
-                padding: "3rem 2.5rem",
+                padding: "4rem 3.5rem",
                 borderBottom: "3px solid transparent",
-                transition: "all 0.35s ease",
+                transition: "all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
                 cursor: "default",
                 position: "relative",
                 overflow: "hidden",
+                alignSelf: i % 2 === 0 ? "flex-start" : "flex-end",
+                width: "100%",
               }}
+              className="md:max-w-[70%] lg:max-w-[60%]"
               onMouseEnter={(e) => {
                 const el = e.currentTarget;
                 el.style.borderBottomColor = "var(--burgundy)";
-                el.style.transform = "translateY(-4px)";
-                el.style.boxShadow = "0 20px 60px rgba(0,0,0,0.08)";
+                el.style.transform = "translateY(-8px)";
+                el.style.boxShadow = "0 30px 70px rgba(0,0,0,0.12)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget;
@@ -100,12 +102,12 @@ export default function Services() {
               <div
                 style={{
                   position: "absolute",
-                  top: "1.5rem",
-                  right: "2rem",
+                  top: "2rem",
+                  right: "3rem",
                   fontFamily: "var(--font-cormorant), Georgia, serif",
-                  fontSize: "4rem",
+                  fontSize: "5.5rem",
                   fontWeight: 300,
-                  color: "rgba(0,0,0,0.04)",
+                  color: "rgba(139,26,47,0.03)",
                   lineHeight: 1,
                   userSelect: "none",
                 }}
