@@ -99,6 +99,7 @@ export default function Showroom() {
                 height: "380px",
                 cursor: "pointer",
               }}
+              className="group"
             >
               <img
                 src={m.image}
@@ -107,40 +108,51 @@ export default function Showroom() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  transition: "transform 0.6s ease",
+                  transition: "transform 1.2s cubic-bezier(0.2, 0.8, 0.2, 1)",
                   display: "block",
-                  filter: "grayscale(20%)",
                 }}
-                onMouseEnter={(e) => {
-                  (e.target as HTMLImageElement).style.transform = "scale(1.05)";
-                  (e.target as HTMLImageElement).style.filter = "grayscale(0%)";
-                }}
-                onMouseLeave={(e) => {
-                  (e.target as HTMLImageElement).style.transform = "scale(1)";
-                  (e.target as HTMLImageElement).style.filter = "grayscale(20%)";
-                }}
+                className="group-hover:scale-110"
               />
               <div
                 style={{
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to top, rgba(26,26,26,0.75) 0%, transparent 55%)",
+                    "linear-gradient(to top, rgba(26,26,26,0.9) 0%, rgba(139,26,47,0.15) 50%, transparent 100%)",
                   display: "flex",
                   alignItems: "flex-end",
-                  padding: "1.5rem",
+                  padding: "2rem",
+                  transition: "all 0.4s ease",
                 }}
               >
-                <h3
+                <div
                   style={{
-                    fontFamily: "var(--font-cormorant), Georgia, serif",
-                    fontSize: "1.35rem",
-                    fontWeight: 400,
-                    color: "#fff",
+                    transform: "translateY(5px)",
+                    transition: "all 0.4s ease",
                   }}
+                  className="group-hover:translate-y-0"
                 >
-                  {m.name}
-                </h3>
+                  <h3
+                    style={{
+                      fontFamily: "var(--font-cormorant), Georgia, serif",
+                      fontSize: "1.5rem",
+                      fontWeight: 400,
+                      color: "#fff",
+                      marginBottom: "0.25rem",
+                    }}
+                  >
+                    {m.name}
+                  </h3>
+                  <div
+                    style={{
+                      width: "20px",
+                      height: "1px",
+                      background: "var(--burgundy-light)",
+                      transition: "width 0.4s ease",
+                    }}
+                    className="group-hover:w-10"
+                  />
+                </div>
               </div>
             </div>
           ))}
