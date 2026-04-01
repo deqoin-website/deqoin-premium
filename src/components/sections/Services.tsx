@@ -75,16 +75,16 @@ export default function Services() {
               key={i}
               style={{
                 background: "#fff",
-                padding: "4rem 3.5rem",
+                padding: "3rem 2rem",
                 borderBottom: "3px solid transparent",
                 transition: "all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1)",
                 cursor: "default",
                 position: "relative",
                 overflow: "hidden",
                 alignSelf: i % 2 === 0 ? "flex-start" : "flex-end",
-                width: "100%",
+                width: "92%",
               }}
-              className="md:max-w-[70%] lg:max-w-[60%]"
+              className="md:max-w-[82%] lg:max-w-[78%]"
               onMouseEnter={(e) => {
                 const el = e.currentTarget;
                 el.style.borderBottomColor = "var(--burgundy)";
