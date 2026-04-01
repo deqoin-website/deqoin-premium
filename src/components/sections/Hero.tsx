@@ -64,12 +64,11 @@ export default function Hero() {
       />
 
       <div
-        className="container-deqoin grid grid-cols-1 lg:grid-cols-[1fr_480px]"
+        className="container-deqoin grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-10 lg:gap-16"
         style={{
           position: "relative",
           zIndex: 1,
-          padding: "8rem 1.5rem 4rem",
-          gap: "4rem",
+          padding: "6rem 1.5rem 4rem",
           alignItems: "center",
         }}
       >
@@ -101,7 +100,7 @@ export default function Hero() {
               fontWeight: 300,
               color: "rgba(255,255,255,0.7)",
               lineHeight: 1.7,
-              marginBottom: "3rem",
+              marginBottom: "clamp(1.5rem, 4vw, 3rem)",
               maxWidth: "540px",
             }}
           >
