@@ -77,66 +77,47 @@ export default function Hero() {
       >
         {/* Hero Text */}
         <div style={{ maxWidth: "640px" }}>
-          <p
+          <h1
             style={{
-              fontFamily: "var(--font-inter), sans-serif",
-              fontSize: "0.65rem",
-              letterSpacing: "0.3em",
-              textTransform: "uppercase",
-              color: "var(--burgundy-light)",
-              marginBottom: "1.5rem",
-              display: "flex",
-              alignItems: "center",
-              gap: "0.75rem",
-            }}
-          >
-            <span
-              style={{
-                display: "inline-block",
-                width: "30px",
-                height: "1px",
-                background: "var(--burgundy)",
-              }}
-            />
-            Nevşehir · Kapadokya
-          </p>
-
-
-
-          <p
-            style={{
-              fontFamily: "var(--font-inter), sans-serif",
-              fontSize: "0.7rem",
-              letterSpacing: "0.3em",
-              textTransform: "uppercase",
-              color: "rgba(255,255,255,0.5)",
-              marginBottom: "1.25rem",
-            }}
-          >
-            Mimari · Tasarım · Uygulama
-          </p>
-
-          <p
-            style={{
-              fontFamily: "var(--font-inter), sans-serif",
-              fontSize: "clamp(1.1rem, 2.5vw, 1.5rem)",
+              fontFamily: "var(--font-cormorant), Georgia, serif",
+              fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
               fontWeight: 300,
-              fontStyle: "italic",
-              color: "rgba(255,255,255,0.65)",
-              lineHeight: 1.6,
-              marginBottom: "3rem",
-              maxWidth: "480px",
+              lineHeight: 1.1,
+              letterSpacing: "-0.01em",
+              color: "#fff",
+              marginBottom: "1.5rem",
             }}
           >
-            Timeless spaces, crafted with precision.
+            Mekanınıza Değer Katan
+            <br />
+            <span style={{ fontStyle: "italic", color: "var(--burgundy-light)" }}>
+              Kusursuz Tasarım
+            </span>{" "}
+            ve Uygulama
+          </h1>
+
+          <p
+            style={{
+              fontFamily: "var(--font-inter), sans-serif",
+              fontSize: "clamp(0.9rem, 2vw, 1.1rem)",
+              fontWeight: 300,
+              color: "rgba(255,255,255,0.7)",
+              lineHeight: 1.7,
+              marginBottom: "3rem",
+              maxWidth: "540px",
+            }}
+          >
+            Hayalinizdeki mekanı profesyonel bir süreç yönetimiyle gerçeğe
+            dönüştürün. Konsept tasarımdan anahtar teslim uygulamaya kadar her
+            detayda en yüksek kaliteyi ve zamanında teslimatı garanti ediyoruz.
           </p>
 
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <Link href="#portfolio" className="btn-burgundy">
-              Projeleri Keşfet <ArrowRight size={14} />
+            <Link href="#contact" className="btn-burgundy">
+              Hemen Projenizi Başlatın <ArrowRight size={14} />
             </Link>
-            <Link href="#contact" className="btn-outline">
-              Randevu Talep Et <ArrowUpRight size={14} />
+            <Link href="#services" className="btn-outline">
+              Ücretsiz Maliyet Analizi <ArrowUpRight size={14} />
             </Link>
           </div>
 
