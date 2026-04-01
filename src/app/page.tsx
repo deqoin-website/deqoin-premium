@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Stats from "@/components/sections/Stats";
 import Services from "@/components/sections/Services";
 import Portfolio from "@/components/sections/Portfolio";
 import WhyDeqoin from "@/components/sections/WhyDeqoin";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <div className="reveal"><Hero /></div>
       <div className="reveal"><About /></div>
+      <div className="reveal"><Stats /></div>
       <div className="reveal"><Services /></div>
       <div className="reveal"><Portfolio /></div>
       <div className="reveal"><WhyDeqoin /></div>
