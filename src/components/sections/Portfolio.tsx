@@ -187,7 +187,7 @@ export default function Portfolio() {
                   transition: "all 0.4s ease",
                   zIndex: 10,
                 }}
-                className="group-hover:opacity-100"
+                className="opacity-100 lg:opacity-0 group-hover:opacity-100"
               >
                 <p
                   style={{
@@ -197,10 +197,10 @@ export default function Portfolio() {
                     textTransform: "uppercase",
                     color: "var(--burgundy-light)",
                     marginBottom: "0.35rem",
-                    transform: "translateY(10px)",
+                    transform: "translateY(0px)",
                     transition: "all 0.4s ease 0.1s",
                   }}
-                  className="group-hover:translate-y-0"
+                  className="lg:translate-y-[10px] group-hover:translate-y-0"
                 >
                   {project.category}
                 </p>
@@ -212,7 +212,7 @@ export default function Portfolio() {
                     transform: "translateY(10px)",
                     transition: "all 0.4s ease 0.2s",
                   }}
-                  className="group-hover:translate-y-0"
+                  className="lg:translate-y-[10px] group-hover:translate-y-0"
                 >
                   <h3
                     style={{
